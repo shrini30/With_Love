@@ -1,0 +1,539 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff5f5; /* Light pastel pink background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #ff9aa2; /* Pastel pink */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav */
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 80px; /* Set a fixed height for the navbar */
+}
+
+/* Logo Styles */
+.logo {
+    height: 100%; /* Make the logo height match the navbar height */
+    width: auto; /* Maintain aspect ratio */
+    position: absolute; /* Position the logo absolutely */
+    top: 0;
+    left: 0; /* Position in the top-left corner */
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+nav {
+    margin-left: auto; /* Push nav to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px 15px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ff9aa2; /* Pastel pink */
+    background-color: #fff;
+}
+
+/* Section Headings */
+h2 {
+    font-size: 2.5em; /* Slightly larger font size */
+    color: #ff6f61; /* Pastel pink */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 30px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-left: 20px; /* Add left margin */
+    padding-bottom: 10px; /* Space for the underline */
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 20px; /* Align underline with the text */
+    bottom: 0;
+    width: 80px; /* Underline width */
+    height: 4px;
+    background-color: #ff6f61; /* Pastel pink */
+    border-radius: 2px;
+    transition: width 0.3s ease; /* Smooth hover effect */
+}
+
+h2:hover::after {
+    width: 120px; /* Expand underline on hover */
+}
+
+h3 {
+    font-size: 2em; /* Slightly larger font size */
+    color: #555;
+    text-align: left; /* Align text to the left */
+    margin-bottom: 25px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    position: relative;
+    padding-left: 20px; /* Add left margin */
+    padding-bottom: 8px; /* Space for the underline */
+}
+
+h3::after {
+    content: '';
+    position: absolute;
+    left: 20px; /* Align underline with the text */
+    bottom: 0;
+    width: 60px; /* Underline width */
+    height: 3px;
+    background-color: #ff6f61; /* Pastel pink */
+    border-radius: 2px;
+    transition: width 0.3s ease; /* Smooth hover effect */
+}
+
+h3:hover::after {
+    width: 90px; /* Expand underline on hover */
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: opacity 0.3s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #ff9aa2; /* Pastel pink */
+    color: #fff;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(135deg, #ffecec 50%, #ffdede 50%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.hero h1 {
+    color: #ff6f61; /* Pastel pink */
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.2em;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel Styles */
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 20px;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.carousel-item {
+    position: relative;
+    min-width: 250px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-item img {
+    width: 100%;
+    max-height: 200px;
+    border-radius: 15px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.carousel-item p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Hover Buttons */
+.action-buttons {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-item:hover .action-buttons {
+    opacity: 1;
+}
+
+/* Global Buttons */
+button {
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #d81b60;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Emoji Buttons */
+.wishlist-button,
+.cart-button {
+    font-size: 18px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 8px;
+    margin: 5px;
+    cursor: pointer;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.wishlist-button:hover,
+.cart-button:hover {
+    background-color: #ffe5ec;
+    transform: scale(1.1);
+}
+
+.wishlist-button.active {
+    background-color: #ff4081;
+    color: #fff;
+}
+
+/* Wishlist Section */
+.wishlist-section {
+    padding: 40px 20px;
+    background: #fffaf0;
+    border-radius: 20px;
+    max-width: 90%;
+    margin: 30px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.wishlist-section h2 {
+    font-size: 2.2em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffc0cb;
+    padding-bottom: 10px;
+}
+
+.wishlist-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.wishlist-items li {
+    background: #ffe6e6;
+    padding: 14px 20px;
+    border-radius: 12px;
+    border: 1px solid #ffc0cb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.wishlist-items li:hover {
+    background-color: #ffcccc;
+}
+
+.wishlist-actions button {
+    margin-left: 10px;
+}
+
+/* Cart Section */
+.cart-section {
+    background: #ffffff;
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin: 40px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 90%;
+    width: 100%;
+}
+
+.cart-section h2 {
+    font-size: 2.5em;
+    color: #ff6f61;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #ffc0cb;
+    padding-bottom: 12px;
+}
+
+/* Cart Items */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 320px;
+    overflow-y: auto;
+    padding: 16px;
+    background: #fffaf0;
+    border-radius: 16px;
+    border: 2px solid #ffb6c1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.cart-items::-webkit-scrollbar {
+    width: 8px;
+}
+.cart-items::-webkit-scrollbar-thumb {
+    background-color: #e91e63;
+    border-radius: 10px;
+}
+
+/* Individual Cart Item */
+.cart-item {
+    background: #ffe6e6;
+    padding: 16px;
+    border: 1px solid #ffc0cb;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.cart-item:hover {
+    background-color: #ffcccc;
+    transform: translateY(-3px);
+}
+
+.cart-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-controls span {
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+/* Summary Section */
+.cart-summary {
+    font-size: 1.2em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 2px solid #ffc0cb;
+    margin-top: 20px;
+}
+
+.cart-summary span {
+    color: #e91e63;
+    font-weight: 700;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    background-color: #e91e63;
+    color: #ffffff;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #d81b60;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wishlist-section,
+    .cart-section {
+        padding: 30px 20px;
+        margin: 20px auto;
+    }
+
+    .wishlist-section h2,
+    .cart-section h2 {
+        font-size: 1.8em;
+    }
+
+    .checkout-btn {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+
+    .cart-summary {
+        font-size: 1em;
+    }
+}
+
+/* About Us Section */
+.about-section {
+    background: #f9f9f9; /* Light pastel background */
+    padding: 50px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 500px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.about-image img:hover {
+    transform: scale(1.05);
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    color: #ff6f61; /* Pastel pink */
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+.about-text strong {
+    color: #ff6f61; /* Pastel pink */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    color: #777;
+    border-radius: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}

@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With Love - Spreading Joy, One Delivery at a Time</title>
+    <link rel="stylesheet" href="wl.css">
+</head>
+<body>
+    <header class="navbar">
+        <img src="logo.jpg" alt="With Love Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#products">Products</a>
+                    <div class="dropdown-content">
+                        <a href="#cakes">Cakes</a>
+                        <a href="#greeting-cards">Greeting Cards</a>
+                        <a href="#pastries">Pastries</a>
+                        <a href="#bouquets">Bouquets</a>
+                        <a href="#gifts">Gifts</a>
+                    </div>
+                </li>
+                <li><a href="#specials">Specials</a></li>
+                <li><a href="#cart">Cart</a></li>
+                <li><a href="#wishlist">Wishlist</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#" onclick="redirectToContact()">Contact Us</a></li>
+                <li><a href="#" onclick="redirectToCustomise()">Customize</a></li>
+            </ul>
+            </nav>
+            </header>
+            
+            <script>
+                function redirectToContact() {
+                    window.location.href = 'zcontact.html';
+                }
+            </script>
+            <script>
+                function redirectToCustomise() {
+                    window.location.href = 'zcustomisation.html';
+                }
+            </script>
+
+    <section id="home" class="hero">
+        <img src="homepage.jpg" alt="With Love Banner" class="hero-image">
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2> Our Products</h2>
+
+<!-- Cakes Section -->
+<section id="cakes">
+    <h3>Cakes</h3>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="cake1.png" alt="Blueberry Cheesecake">
+            <p>Blueberry Cheesecake - ₹300</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Blueberry Cheesecake', 300)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Blueberry Cheesecake', 300)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake2.png" alt="Double Chocolate Cake">
+            <p>Double Chocolate Cake - ₹350</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Double Chocolate Cake', 350)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Double Chocolate Cake', 350)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake3.png" alt="Chocoholic Cake">
+            <p>Chocoholic Cake - ₹400</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Chocoholic Cake', 400)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Chocoholic Cake', 400)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake4.png" alt="Eggless Strawberry Cake">
+            <p>Eggless Strawberry Cake - ₹450</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Eggless Strawberry Cake', 450)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Eggless Strawberry Cake', 450)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake5.png" alt="Baked Cheesecake">
+            <p>Baked Cheesecake - ₹300</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Baked Cheesecake', 300)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Baked Cheesecake', 300)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake6.png" alt="Calender Cake">
+            <p>Calender Cake - ₹350</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Calender Cake', 350)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Calender Cake', 350)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake7.png" alt="Hazelnut Mousse Cake">
+            <p>Hazelnut Mousse Cake - ₹450</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Hazelnut Mousse Cake', 450)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Hazelnut Mousse Cake', 450)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake8.png" alt="Strawberry Cake">
+            <p>Strawberry Cake - ₹400</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Strawberry Cake', 400)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Strawberry Cake', 400)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="cake9.png" alt="Dutch Truffle Cake">
+            <p>Dutch Truffle Cake - ₹450</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Dutch Truffle Cake', 450)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Dutch Truffle Cake', 450)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Greeting Cards Section -->
+<section id="greeting-cards">
+    <h3>Greeting Cards</h3>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="g1.jpeg" alt="Astro Birthday Card">
+            <p>Astro Birthday Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Astro Birthday Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Astro Birthday Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g2.jpeg" alt="New Year's Teddy Card">
+            <p>New Year's Teddy Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'New Year\'s Teddy Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'New Year\'s Teddy Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g3.jpeg" alt="Goodluck Monthly Wish">
+            <p>Goodluck Monthly Wish - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Goodluck Monthly Wish', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Goodluck Monthly Wish', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g4.jpeg" alt="Birthday Card">
+            <p>Birthday Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Birthday Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Birthday Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g5.jpeg" alt="Lover Message">
+            <p>Lover Message - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Lover Message', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Lover Message', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g6.jpeg" alt="Thank You Card">
+            <p>Thank You Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Thank You Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Thank You Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g7.jpeg" alt="Lovers Card">
+            <p>Lovers Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Lovers Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Lovers Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g8.jpeg" alt="Special Greetings">
+            <p>Special Greetings - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Special Greetings', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Special Greetings', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g9.jpeg" alt="Lavender Birthday Card">
+            <p>Lavender Birthday Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Lavender Birthday Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Lavender Birthday Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g10.jpeg" alt="Handmade 3D Card">
+            <p>Handmade 3D Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Handmade 3D Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Handmade 3D Card', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g11.jpeg" alt="Anniversary Card">
+            <p>Anniversary Card - ₹26</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Anniversary Card', 26)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Anniversary Card', 26)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g12.jpeg" alt="Customised Birthday Wish">
+            <p>Customised Birthday Wish - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Customised Birthday Wish', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Customised Birthday Wish', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g13.jpeg" alt="New Year Eve Message">
+            <p>New Year Eve Message - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'New Year Eve Message', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'New Year Eve Message', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g14.jpeg" alt="Thanksgiving Message">
+            <p>Thanksgiving Message - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Thanksgiving Message', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Thanksgiving Message', 30)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g15.jpeg" alt="3 Small Message Cards">
+            <p>3 Small Message Cards - ₹18</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '3 Small Message Cards', 18)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '3 Small Message Cards', 18)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="g16.jpeg" alt="Beans Birthday Card">
+            <p>Beans Birthday Card - ₹30</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Beans Birthday Card', 30)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Beans Birthday Card', 30)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</section>
+
+
+<!-- Pastries Section -->
+<section id="Pastries">
+    <h3>Pastries</h3>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="p1.png" alt="Triple Chocolate Pastry">
+            <p>Triple Chocolate Pastry - ₹80</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Triple Chocolate Pastry', 80)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Triple Chocolate Pastry', 80)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="p2.png" alt="Chocolate Fudge Pastry">
+            <p>Chocolate Fudge Pastry - ₹70</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Chocolate Fudge Pastry', 70)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Chocolate Fudge Pastry', 70)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="p3.png" alt="Eggless Pineapple Pastry">
+            <p>Eggless Pineapple Pastry - ₹80</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Eggless Pineapple Pastry', 80)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Eggless Pineapple Pastry', 80)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="p4.png" alt="Strawberry Pastry">
+            <p>Strawberry Pastry - ₹70</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Strawberry Pastry', 70)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Strawberry Pastry', 70)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="p5.png" alt="Black Forest Pastry">
+            <p>Black Forest Pastry - ₹60</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Black Forest Pastry', 60)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Black Forest Pastry', 60)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Bouquets Section -->
+<section id="bouquets">
+    <h3>Bouquets</h3>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="b1.png" alt="1 Rose Special Bouquet">
+            <p>1 Rose Special Bouquet - ₹40</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '1 Rose Special Bouquet', 40)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '1 Rose Special Bouquet', 40)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b2.png" alt="Yellow Rose Bouquet">
+            <p>Yellow Rose Bouquet - ₹250</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Yellow Rose Bouquet', 250)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Yellow Rose Bouquet', 250)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b3.png" alt="Mixed Flower Bouquet">
+            <p>Mixed Flower Bouquet - ₹200</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Mixed Flower Bouquet', 200)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Mixed Flower Bouquet', 200)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b4.png" alt="Lilies N Carnations Basket">
+            <p>Lilies N Carnations Basket - ₹300</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Lilies N Carnations Basket', 300)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Lilies N Carnations Basket', 300)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b5.png" alt="Red Roses Bouquet">
+            <p>Red Roses Bouquet - ₹200</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Red Roses Bouquet', 200)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Red Roses Bouquet', 200)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b6.png" alt="Blue Orchids Bouquet">
+            <p>Blue Orchids Bouquet - ₹350</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Blue Orchids Bouquet', 350)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Blue Orchids Bouquet', 350)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="b7.png" alt="White Roses Bouquet">
+            <p>White Roses Bouquet - ₹250</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'White Roses Bouquet', 250)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'White Roses Bouquet', 250)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Gifts Section -->
+<section id="gifts">
+    <h3>Gifts</h3>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="s1.jpeg" alt="Gift 1">
+            <p>30 small heart shaped candles - ₹300</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '30 small heart shaped candles', 300)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '30 small heart shaped candles', 300)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s2.jpeg" alt="Gift 2">
+            <p>6 Scented Cloud Candles - ₹350</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '6 Scented Cloud Candles', 350)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '6 Scented Cloud Candles', 350)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s3.jpeg" alt="Gift 3">
+            <p>Penguin Couple Plushie - ₹200</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Penguin Couple Plushie', 200)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Penguin Couple Plushie', 200)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s4.jpeg" alt="Gift 4">
+            <p>Panda Plushie - ₹120</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Panda Plushie', 120)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Panda Plushie', 120)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s5.jpeg" alt="Gift 5">
+            <p>Kitty Tap LED - ₹150</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Kitty Tap LED', 150)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Kitty Tap LED', 150)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s6.jpeg" alt="Gift 6">
+            <p>Cloud & Moon Tap LED - ₹200</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Cloud & Moon Tap LED', 200)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Cloud & Moon Tap LED', 200)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s7.jpeg" alt="Gift 7">
+            <p>White Sheep Plushie - ₹100</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'White Sheep Plushie', 100)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'White Sheep Plushie', 100)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s8.jpeg" alt="Gift 8">
+            <p>Twin Teddy Scented Candles white and Blue - ₹150</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Twin Teddy Scented Candles white and Blue', 150)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Twin Teddy Scented Candles white and Blue', 150)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s9.jpeg" alt="Gift 9">
+            <p>Love Penguins Tap LED - ₹180</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Love Penguins Tap LED', 180)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Love Penguins Tap LED', 180)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s10.jpeg" alt="Gift 10">
+            <p>2 Homemade Chocolate Bars - ₹160</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '2 Homemade Chocolate Bars', 160)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '2 Homemade Chocolate Bars', 160)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s11.jpeg" alt="Gift 11">
+            <p>30 Assorted Homemade Chocolates - ₹300</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '30 Assorted Homemade Chocolates', 300)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '30 Assorted Homemade Chocolates', 300)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s12.jpeg" alt="Gift 12">
+            <p>ILY Homemade Chocolates - ₹120</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'ILY Homemade Chocolates', 120)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'ILY Homemade Chocolates', 120)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s13.jpeg" alt="Gift 13">
+            <p>Special tap Panda LED - ₹150</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Special tap Panda LED', 150)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Special tap Panda LED', 150)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s14.jpeg" alt="Gift 14">
+            <p>Special tap Cloud LED - ₹200</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Special tap Cloud LED', 200)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Special tap Cloud LED', 200)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s15.jpeg" alt="Gift 15">
+            <p>Hooded Penguin Soft Toy - ₹100</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Hooded Penguin Soft Toy', 100)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Hooded Penguin Soft Toy', 100)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="s16.jpeg" alt="Gift 16">
+            <p>Three Bubble Scented Candles - ₹120</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Three Bubble Scented Candles', 120)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Three Bubble Scented Candles', 120)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Cakes Section -->
+<section id="cakes">
+    <h3>Cakes</h3>
+    <div class="carousel-container">
+  
+      <!-- Example cake item -->
+      <div class="carousel-item">
+        <img src="cake1.png" alt="Blueberry Cheesecake">
+        <p>Blueberry Cheesecake - ₹300</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Blueberry Cheesecake', 300)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Blueberry Cheesecake', 300)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake2.png" alt="Double Chocolate Cake">
+        <p>Double Chocolate Cake - ₹350</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Double Chocolate Cake', 350)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Double Chocolate Cake', 350)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake3.png" alt="Chocoholic Cake">
+        <p>Chocoholic Cake - ₹400</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Chocoholic Cake', 400)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Chocoholic Cake', 400)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake4.png" alt="Eggless Strawberry Cake">
+        <p>Eggless Strawberry Cake - ₹450</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Eggless Strawberry Cake', 450)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Eggless Strawberry Cake', 450)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake5.png" alt="Baked Cheesecake">
+        <p>Baked Cheesecake - ₹300</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Baked Cheesecake', 300)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Baked Cheesecake', 300)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake6.png" alt="Calender Cake">
+        <p>Calender Cake - ₹350</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Calender Cake', 350)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Calender Cake', 350)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake7.png" alt="Hazelnut Mousse Cake">
+        <p>Hazelnut Mousse Cake - ₹450</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Hazelnut Mousse Cake', 450)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Hazelnut Mousse Cake', 450)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake8.png" alt="Strawberry Cake">
+        <p>Strawberry Cake - ₹400</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Strawberry Cake', 400)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Strawberry Cake', 400)">🛒</button>
+        </div>
+      </div>
+  
+      <div class="carousel-item">
+        <img src="cake9.png" alt="Dutch Truffle Cake">
+        <p>Dutch Truffle Cake - ₹450</p>
+        <div class="action-buttons">
+          <button class="wishlist-button" onclick="toggleWishlist(this, 'Dutch Truffle Cake', 450)">🤍</button>
+          <button class="cart-button" onclick="toggleCart(this, 'Dutch Truffle Cake', 450)">🛒</button>
+        </div>
+      </div>
+  
+    </div>
+  </section>
+
+  <section id="specials">
+    <h2>Specialized Combos</h2>
+    <div class="carousel-container">
+
+        <div class="carousel-item">
+            <img src="c1.png" alt="Cake 1">
+            <p>Tripple Chocolate Cake + Roses Bouquet - ₹599</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Tripple Chocolate Cake + Roses Bouquet', 599)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Tripple Chocolate Cake + Roses Bouquet', 599)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c2.png" alt="Cake 2">
+            <p>Chocolate Fudge Brownie Cake + Roses Bouquet - ₹649</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Chocolate Fudge Brownie Cake + Roses Bouquet', 649)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Chocolate Fudge Brownie Cake + Roses Bouquet', 649)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c3.png" alt="Cake 3">
+            <p>Roses Bouquet + Small Teddy + Dark Chocolate Cake - ₹699</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Roses Bouquet + Small Teddy + Dark Chocolate Cake', 699)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Roses Bouquet + Small Teddy + Dark Chocolate Cake', 699)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c4.png" alt="Cake 4">
+            <p>Roses + Chocolate Bouquet - ₹299</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Roses + Chocolate Bouquet', 299)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Roses + Chocolate Bouquet', 299)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c5.png" alt="Cake 5">
+            <p>Black Forest Cake + 1 Rose + 1 Pink Teddy Bear - ₹549</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Black Forest Cake + 1 Rose + 1 Pink Teddy Bear', 549)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Black Forest Cake + 1 Rose + 1 Pink Teddy Bear', 549)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c6.jpeg" alt="Combo 6">
+            <p>30 Red Roses + 20 Homemade Chocolates + 20 Homemade Cookies + 10 Snickers - ₹599</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '30 Red Roses + 20 Homemade Chocolates + 20 Homemade Cookies + 10 Snickers', 599)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '30 Red Roses + 20 Homemade Chocolates + 20 Homemade Cookies + 10 Snickers', 599)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c7.jpeg" alt="Combo 7">
+            <p>10 Roses + 2 Small Bouquets + 1 Box of Homemade Chocolates - ₹399</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '10 Roses + 2 Small Bouquets + 1 Box of Homemade Chocolates', 399)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '10 Roses + 2 Small Bouquets + 1 Box of Homemade Chocolates', 399)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c8.jpeg" alt="Combo 8">
+            <p>Customizable Bouquet + Customizable Cake + Greetings Card - ₹999</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, 'Customizable Bouquet + Customizable Cake + Greetings Card', 999)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, 'Customizable Bouquet + Customizable Cake + Greetings Card', 999)">🛒</button>
+            </div>
+        </div>
+
+        <div class="carousel-item">
+            <img src="c9.jpeg" alt="Combo 9">
+            <p>1 Customizable Cake + 2 Cupcakes + 5 Cookies - ₹999</p>
+            <div class="action-buttons">
+                <button class="wishlist-button" onclick="toggleWishlist(this, '1 Customizable Cake + 2 Cupcakes + 5 Cookies', 999)">🤍</button>
+                <button class="cart-button" onclick="toggleCart(this, '1 Customizable Cake + 2 Cupcakes + 5 Cookies', 999)">🛒</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Wishlist Section -->
+<section id="wishlist" class="wishlist-section">
+    <h2>Your Wishlist</h2>
+    <ul class="wishlist-items" id="wishlist-items"></ul>
+</section>
+
+<!-- Cart Section -->
+<section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <ul class="cart-items" id="cart-items"></ul>
+    <div class="cart-summary">
+        <p>Total: ₹<span id="cart-total">0</span></p>
+        <button onclick="redirectToLogin()">Proceed to Checkout</button>
+    </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-content">
+            <div class="about-image">
+                <img src="about.png" alt="About Us Image">
+            </div>
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    At <strong>With Love</strong>, we bring together <strong>local bakers, florists, and home-based businesses</strong> to create a vibrant marketplace for unique, handcrafted products. Our platform is designed to connect passionate artisans with happy customers, ensuring every purchase supports local talent and spreads joy. Whether it’s a delicious cake, a stunning bouquet, or a thoughtful gift, we’re here to make every moment special—one delivery at a time.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 With Love. All Rights Reserved.</p>
+</footer>
+
+<script>
+
+    const cart = new Map();
+    const wishlist = new Set();
+
+    document.addEventListener("DOMContentLoaded", () => {
+        try {
+            const savedCart = JSON.parse(localStorage.getItem("cart"));
+            const savedWishlist = JSON.parse(localStorage.getItem("wishlist"));
+
+            if (Array.isArray(savedCart)) {
+                savedCart.forEach(([name, details]) => {
+                    if (typeof name === "string" && typeof details === "object") {
+                        cart.set(name, details);
+                    }
+                });
+            }
+
+            if (Array.isArray(savedWishlist)) {
+                savedWishlist.forEach(itemName => {
+                    if (typeof itemName === "string") wishlist.add(itemName);
+                });
+            }
+        } catch (e) {
+            localStorage.removeItem("cart");
+            localStorage.removeItem("wishlist");
+        }
+
+        updateCart();
+        updateWishlist();
+        restoreButtonStates();
+    });
+
+    function updateCart() {
+        const container = document.getElementById("cart-items");
+        container.innerHTML = "";
+        let total = 0;
+
+        if (cart.size === 0) {
+            container.innerHTML = "<li class='cart-item'>Your cart is empty</li>";
+            return;
+        }
+
+        cart.forEach((details, name) => {
+            const li = document.createElement("li");
+            li.className = "cart-item";
+            li.innerHTML = `
+                <span><strong>${name}</strong></span>
+                <div>
+                    <button onclick="changeQuantity('${name}', -1)">&lt;</button>
+                    <span style="margin: 0 10px;">${details.quantity}</span>
+                    <button onclick="changeQuantity('${name}', 1)">&gt;</button>
+                    <button onclick="removeItem('${name}')">Remove</button>
+                </div>
+            `;
+            container.appendChild(li);
+            total += details.price * details.quantity;
+        });
+
+        document.getElementById("cart-total").textContent = total;
+    }
+
+    function updateWishlist() {
+        const container = document.getElementById("wishlist-items");
+        container.innerHTML = "";
+
+        if (wishlist.size === 0) {
+            container.innerHTML = "<li class='cart-item'>Your wishlist is empty</li>";
+            return;
+        }
+
+        wishlist.forEach(name => {
+            const li = document.createElement("li");
+            li.className = "cart-item";
+            li.innerHTML = `
+                <span><strong>${name}</strong></span>
+                <div>
+                    <button onclick="removeFromWishlist('${name}')">Remove</button>
+                </div>
+            `;
+            container.appendChild(li);
+        });
+    }
+
+    function toggleCart(button, name, price) {
+        if (cart.has(name)) {
+            cart.delete(name);
+        } else {
+            cart.set(name, { price: price, quantity: 1 });
+        }
+        saveCart();
+        updateCart();
+        restoreButtonStates();
+    }
+
+    function toggleWishlist(button, name) {
+        if (wishlist.has(name)) {
+            wishlist.delete(name);
+        } else {
+            wishlist.add(name);
+        }
+        saveWishlist();
+        updateWishlist();
+        restoreButtonStates();
+    }
+
+    function changeQuantity(name, delta) {
+        if (!cart.has(name)) return;
+        const item = cart.get(name);
+        item.quantity += delta;
+        if (item.quantity <= 0) cart.delete(name);
+        else cart.set(name, item);
+
+        saveCart();
+        updateCart();
+        restoreButtonStates();
+    }
+
+    function removeItem(name) {
+        cart.delete(name);
+        saveCart();
+        updateCart();
+        restoreButtonStates();
+    }
+
+    function removeFromWishlist(name) {
+        wishlist.delete(name);
+        saveWishlist();
+        updateWishlist();
+        restoreButtonStates();
+    }
+
+    function saveCart() {
+        localStorage.setItem("cart", JSON.stringify(Array.from(cart.entries())));
+    }
+
+    function saveWishlist() {
+        localStorage.setItem("wishlist", JSON.stringify(Array.from(wishlist)));
+    }
+
+    function toggleCart(button, name, price) {
+    if (cart.has(name)) {
+        cart.delete(name);
+        button.textContent = "🛒";
+    } else {
+        cart.set(name, { price: price, quantity: 1 });
+        button.textContent = "✅";
+    }
+    saveCart();
+    updateCart();
+}
+
+function toggleWishlist(button, name) {
+    if (wishlist.has(name)) {
+        wishlist.delete(name);
+        button.textContent = "🤍";
+    } else {
+        wishlist.add(name);
+        button.textContent = "❤️";
+    }
+    saveWishlist();
+    updateWishlist();
+}
+
+
+    function redirectToLogin() {
+        saveCart();
+        window.location.href = "zlogin.html";
+    }
+</script>
+
+</body>
+</html>
